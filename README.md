@@ -2,6 +2,9 @@
 
 This project is a test program designed to interact with the GPIO pins on a Raspberry Pi 5. It provides a simple way to verify GPIO functionality and experiment with input/output operations.
 
+## Credits
+[Raspberry Pi Forums](https://forums.raspberrypi.com/viewtopic.php?t=365189). Special thanks to the community for their valuable insights and contributions.
+
 ## Features
 
 - Read and write to GPIO pins.
@@ -19,18 +22,17 @@ This project is a test program designed to interact with the GPIO pins on a Rasp
 1. Clone this repository:
     ```bash
     git clone <repository-url>
-    cd gpio_test
+    cd rpi5-gpio-test
     ```
 
 2. Compile the program:
     ```bash
-    gcc -o testgpio gpio_test.c -lwiringPi
+    gcc -o testgpio testgpio.c -lgpiod
     ```
 
 ## Usage
 
-1. Connect your hardware to the GPIO pins.
-2. Run the test program:
+1. Run the test program:
     ```bash
     ./testgpio
     ```
